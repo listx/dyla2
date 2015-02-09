@@ -2,6 +2,7 @@ require File.expand_path('../boot', __FILE__)
 
 # Use minimal setup. E.g., do not use activerecord (b/c we are using mongoid).
 require "active_model/railtie"
+require "active_job/railtie" # for running backend jobs (clearing high score?)
 require "action_controller/railtie"
 require "action_view/railtie"
 require "sprockets/railtie"
@@ -24,9 +25,6 @@ module Dyla2
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-
-    # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.active_record.raise_in_transactional_callbacks = true
 
     config.generators.stylesheets = false
     config.generators.javascripts = false
