@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :game_decks
+  resources :decks
+  resources :cards
+
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.

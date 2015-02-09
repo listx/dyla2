@@ -1,0 +1,19 @@
+h1 Listing decks
+
+table
+  thead
+    tr
+      th
+      th
+      th
+
+  tbody
+    - @decks.each do |deck|
+      tr
+        td = link_to 'Show', deck
+        td = link_to 'Edit', edit_deck_path(deck)
+        td = link_to 'Destroy', deck, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Deck', new_deck_path
