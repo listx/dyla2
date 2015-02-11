@@ -31,6 +31,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Ember for single-page-app (SPA) functionality
 gem 'ember-rails'
 gem 'ember-source', '~> 1.9.1'
+# Use Emblem to get SLIM-like syntax for views (instead of HTML + handlebars)
+gem 'emblem-rails'
 
 gem 'slim-rails'
 gem 'bootstrap-sass'
