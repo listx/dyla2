@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/machty/emblem.js.git
+  revision: e60b7c35e4e677ce87ebfcc1c7c4543150219246
+  specs:
+    emblem-source (0.3.18)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -97,7 +103,6 @@ GEM
     emblem-rails (0.2.2)
       barber-emblem (~> 0.1.1)
       ember-rails (>= 0.14.0)
-    emblem-source (0.3.18)
     erubis (2.7.0)
     execjs (2.3.0)
     font-awesome-sass (4.3.1)
@@ -225,6 +230,7 @@ DEPENDENCIES
   ember-rails
   ember-source (~> 1.9.1)
   emblem-rails
+  emblem-source!
   font-awesome-sass
   jbuilder (~> 2.0)
   jquery-rails

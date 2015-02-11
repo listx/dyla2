@@ -33,6 +33,7 @@ gem 'ember-rails'
 gem 'ember-source', '~> 1.9.1'
 # Use Emblem to get SLIM-like syntax for views (instead of HTML + handlebars)
 gem 'emblem-rails'
+gem "emblem-source", github: "machty/emblem.js"
 
 gem 'slim-rails'
 gem 'bootstrap-sass'
