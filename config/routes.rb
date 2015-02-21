@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  # catch-all route for reloading Ember subroutes
+  get '*path', to: 'welcome#index'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
