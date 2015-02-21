@@ -1,3 +1,3 @@
 class CardSerializer < ApplicationSerializer
-  attributes :id
+  attributes :name, :cost
 end
