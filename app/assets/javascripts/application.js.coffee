@@ -18,4 +18,4 @@
 #= require dyla
 
 # for more details see: http://emberjs.com/guides/application/
-window.Dyla = Ember.Application.create()
+window.Dyla = Ember.Application.create(rootElement: '#ember-app')
