@@ -5,11 +5,9 @@ class Deck
   belongs_to :game_deck
   has_many :cards
 
-  # :type, 0 for 'enemy deck' and 1 for 'player deck'
-  field :type, type: Integer
+  # :tipe; e.g. "player" deck, "environment" deck, "villain" deck, etc. It
+  # depends on the game.
+  field :tipe, type: String
 
-  validates_presence_of :type
-  validates_numericality_of :type,
-    :greater_than_or_equal_to 0,
-    :less_than_or_equal_to 1
+  validates_presence_of :tipe
 end
