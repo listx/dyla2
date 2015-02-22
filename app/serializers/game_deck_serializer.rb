@@ -1,3 +1,3 @@
 class GameDeckSerializer < ApplicationSerializer
-  attributes :id
+  attributes :name, :version
 end

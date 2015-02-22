@@ -1,3 +1,3 @@
 class DeckSerializer < ApplicationSerializer
-  attributes :id
+  attributes :tipe
 end
