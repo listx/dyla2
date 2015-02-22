@@ -1,3 +1,3 @@
 class DeckSerializer < ApplicationSerializer
-  attributes :tipe
+  attributes :tipe, :card_ids
 end

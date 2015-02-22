@@ -1,0 +1,18 @@
+ul
+  = each gd in model
+    li
+      = gd.name
+      '
+      = gd.version
+      '
+      ul
+        = each d in gd.decks
+          li
+            = d.tipe
+            '
+            ul
+              = each c in d.cards
+                li
+                  = c.name
+                  '
+                  = c.cost

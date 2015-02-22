@@ -5,8 +5,7 @@ Dyla.Router.reopen
 #  rootURL: '/'
 
 Dyla.Router.map ()->
-  @resource 'cards', path: '/'
-#  @resource 'cards'
+  @resource 'game_decks', path: '/'
 
-Dyla.CardsRoute = Ember.Route.extend
-  model: -> @store.find 'card'
+Dyla.GameDecksRoute = Ember.Route.extend
+  model: -> @store.find 'game_deck'
