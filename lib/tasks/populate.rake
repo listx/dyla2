@@ -1,5 +1,6 @@
 srand 12345
 
+# Create a set of sample games.
 namespace :db do
   task populate: :environment do
     GameDeck.destroy_all
