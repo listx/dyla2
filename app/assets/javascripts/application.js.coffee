@@ -19,3 +19,5 @@
 
 # for more details see: http://emberjs.com/guides/application/
 window.Dyla = Ember.Application.create(rootElement: '#ember-app')
+
+Dyla.ApplicationAdapter = DS.ActiveModelAdapter.extend()

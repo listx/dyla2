@@ -1,1 +1,4 @@
 p Welcome to Dyla2 Demo
+
+section#main
+  = outlet
