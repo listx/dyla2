@@ -56,7 +56,7 @@ group :development, :test do
   gem 'spring'
 
   # fake data
-  gem 'ffaker'
+  gem 'faker'
 
   # better console
   gem 'pry-rails'
